@@ -1,0 +1,5 @@
+
+Avec bitcoin on sait maintenant faire + et - de maniere
+décentralisée.
+
+TAZ = filesystem décentralisé

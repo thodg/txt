@@ -1,0 +1,7 @@
+
+per functionnality/dependency git packaging
+
+C, Common Lisp
+
+Gentoo, OpenBSD
+

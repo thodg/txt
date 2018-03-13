@@ -1,0 +1,39 @@
+
+OK so how about this : light is at least two times faster than sound.
+
+1 2 5 4 3 1 2
+
+i seem to have intuitive speed as a heuristic in inifinitely derivable levels
+yeah i'm good with harmonics
+
+if you study grammar you understand log/exp_26 has a different shape
+from log/exp_10 for instance.
+
+I mean I have a way to describe a logical system as a continuously
+derivable signal. I can un-flatline things. The functional space is
+embedded in this continuously derivable signal. It can be arranged
+into n-dimentional datasets. A three dimentional cloud with two light
+source positions would be best for visualization.
+
+Three times infinitely derivable gives access to notion of otherness
+to readers of some parts of |R3. It gives an infinitely precise world
+view to match every other aspect of two other infinitely precise world
+views. So it could be said to represent perfect notions of truth,
+recognition of truth, ego, recognition of ego, others, recognition of
+others. In six directions.
+
+For sale : barely used 3.5D linear exponential/logarithmic solver HPC
+parallel computing, linear solver, 7 billion nodes, ...
+
+Audio one has linear tone control (REPL) from exponential scale
+frequencies. input can be extracted from air pressure levels by harmonic
+analysis in the ear and cochlea.
+
+Video one is linear half (1/2).
+
+Two video one readers are coupled horizontally to add a sense of depth
+and another high redudancy information channel.
+
+So if audio
+t0 0
+t1 e(t1)

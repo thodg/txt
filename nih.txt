@@ -1,0 +1,6 @@
+
+Not invented here ?
+
+Not implemented here !
+
+We seek for multiple implementations of simple protocols.

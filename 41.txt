@@ -1,0 +1,10 @@
+
+'procedure goto 42'
+'  thou shall want xx'
+'    its there : .'
+'  thou shall not want xy auto die'
+'    its now !'
+
+talk audio id signal wifi led
+
+why so loud ?

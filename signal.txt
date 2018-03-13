@@ -1,0 +1,16 @@
+
+format
+ encodage PCM sigma-delta µ-law a-law
+ sample rate
+  nyquist frequency
+ bit depth
+  signal-bruit
+ channels
+
+spectre
+ centroide
+ spread
+ roll-off
+ fondamentale
+ harmoniques
+ bande passante

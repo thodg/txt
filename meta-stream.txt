@@ -1,0 +1,138 @@
+
+A meta-stream is a stream able to address its contents.
+
+Every binary stream can be a meta-stream on a given bus size in bits
+and bit endianness.
+
+A stream containing symbols can be a meta-stream given a way to define
+symbols as tags.
+
+Binary streams can be streams containing symbols. So there are multiple
+ways for binary streams to be meta-streams.
+
+An easy to determine difference is self-synchronization. Either the
+contents of the stream have a way to label addresses and give reference
+to them later, that we call that self-synchronization or explicit
+addressing. Either the semantics are just seeking to a particular byte
+at a given numerical address, reusing the notion of stream as a sequence
+of elements, that we call implicit addressing.
+
+By all these means of addressing and self semantizing data, probably
+all the data of your company and yourself leaked to other levels of
+intelligence. I mean the intelligence is in the data streams as much
+as it can enter our brains as being relevant or not, consciously or not,
+and it can be contextualized and made unaccessible by means of negative
+association we all have to endure to equilibrate energy levels. But
+still there is a huge possibility that every data leaks everywhere
+rather fast. It's just a different addressing scheme giving way for
+others to cross link the actual meaning of something as a group and
+not as an individual anymore. And this can lead to all sort of abuses to
+members of these groups. Including death. It's like a global multi-
+semantization of things by means of chaos and deceit so that each branch
+tries its best to find something new. But sometimes they realize they
+share a huge amount of equal information in different form and choose
+to rationalize and then realize that in the difference of forms there
+was something else expressed that they now miss as expressive power,
+thus numbing the system and its participants. So by rationalizing a
+non empty data stream the system lost at least one bit of entropy as to
+wether this form was being used or not to represent the same subject.
+Some call this Karma, Noosphere, Zeitgeist. Anyway, the globalization of
+2.4GHz micro-wave encrypted telecommunications using electromagnetics
+and a widespread array of antennas all over the world where humans live
+to convey our voices and data maybe opened real entropy channels for
+silent electro-magnetic communication of humans between themselves and
+not through verifyable, 3D media. 3D is 3 times infinitely derivable,
+once in each dimension. So it is three times a logical space. It is what
+is needed to transactionalize a system in two agents. There is no
+notion of otherness below three dimensional systems. It would follow
+that study of what constitutes a 3D sound makes for a very important
+part of understanding ego as an emergent property of a constructive
+symbolic system being three times infinitely derivable. That is what
+logic and FACTS tell me. So as capitalist human beings mainly embedded
+and living in a 3D world with body as a boundary to others it is of
+primary concern to differenciate between a wild signal of possibly no
+meaning as being flat and a real, multiply infinitely derivable signal.
+
+That would be my understanding of the notions of self, ego,
+representation and understanding of reality and reality of other egos or
+non-egos, as psychiatry recently questionned my understanding of these
+topics I sure do not expect them to read me but anyway I cannot not
+acknowledge them anymore as hopeful problem solvers however misdirected
+they might act. But near them it would seem all crazyness is attracted
+to them so what hope is left to their souls ? Anyway...
+
+Most internet data being HTML it uses explicit addressing of tags in
+HTML documents. However HTTP uses implicit addressing for Content-size
+and connection keep-alive. Multipart MIME mail uses explicit addressing.
+FTP uses implicit addressing. PDF makes use of both. All in all it's
+rather well distributed amongst deployed internet protocols and commonly
+used file types. Most programmers and designers do not make use for the
+differenciation between explicit and implicit addressing and readily
+make use of both everywhere. However categorization can be done and
+refined between explicit addressing only, implicit addressing only, and
+both implicit and explicit addressing.
+
+Explicit addressing
+
+Most programming language metagrammars (the core of the language) are
+explicit addressing meta-streams. They build control and data structures
+at specific addresses by giving them names and using these names to
+reference these structures. Even numeric addresses of goto labels are
+actually symbolic labels so explicit addressing. I do not know of any
+programming language with implicit addressing. Maybe we rather call
+these virtual machines nowadays. Ethernet uses explicit addressing by
+letting agents broadcast their address (broadcasting is justified by
+ethernet being a physical layer protocol).
+
+Explicit addressing can be transactionnally orthogonal to stream
+addressing, though that would be very difficult to prove in most cases.
+However.
+
+Explicit addressing can also be found to be bijective with implicit
+addressing. In this case explicit addressing can be viewed as a
+bijective function mapping of implicit addressing. This function we call
+the meta-stream function of the stream, or meta function of the stream.
+
+Most C programmers regard the change from explicit to implicit
+addressing as being the job of the linker (/usr/bin/ld) and dynamic
+linker (/lib/ld.so). However they use structures everywhere to create
+a myriad of explicit to implicit addressing schemes. We want to prove
+that a C-like structure (in that it has the binary sizes of all its
+constituents) along with all its constituent types definitions, is a
+meta-function between C explicit addressing and C ABI implicit
+addressing which is readily understood by CPU and electronics in
+general and somewhat differently optimizable.
+
+
+Implicit addressing
+
+Most hardware protocols use implicit addressing until you consider
+plug and play protocols like PCI and ATA bus autodetection, or USB.
+All hardware buses are meta-streams.
+All computer mass storage systems are implicit addressing meta-streams.
+Numbers are good with micro-electronics in the 2010's.
+All UNIX streams are implicit addressing meta-streams, including
+TCP sockets but not UDP sockets which are not streams.
+
+
+
+
+
+
+Most binary protocol languages are meta-functions of a few symbols
+giving a way for programmers or programs to change parts of the
+stream or what the stream represents at very specific places in the
+stream sometimes with a few bits of meta-information to correlate
+(checksum) and debug the data.
+
+Maybe it is the notion of Operating System that truly represents
+this notable bend of entropy measurements.
+
+
+
+All in all implicit addressing seems a more simple way of building and
+maintaining things so whenever it can be accomplished it seems a
+preferable way to design the lower layers of abstractions as
+implicit addressing whenever possible as it is more robust and
+verifyable than a more complex addressing alternative.
+It would seem that vectors and streams still have a long way to go.

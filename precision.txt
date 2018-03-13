@@ -1,0 +1,13 @@
+
+I'm sure, convinced by intuition, observation and feeling of persecution
+from researchers, that binary data can only represent one bit plus or minus
+sqrt(2) of real space as we know it, for any value of sqrt(2).
+More precision means more space.
+
+Space is expanding because we are all trying to explain systems
+by means of their smaller components. It's easier to look inside things.
+
+However when there is time, the small things might lose track of how they
+build the whole system, so for complex things, other equally complex things
+are often better than small things. System dynamics is the adequate tool.
+

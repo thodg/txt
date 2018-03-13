@@ -1,0 +1,3 @@
+
+If you plug an oscilloscope on the instruction pins of the central processor unit, you get ASCII text.
+

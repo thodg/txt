@@ -1,0 +1,31 @@
+
+procedural loop :
+ |- read
+ |- eval
+ |- print
+
+typed loop :
+ |- acquire
+ |- think
+ |- reply
+ |- publish
+
+acquire = update think model according to acquire driver
+think = auto update think model
+reply = reply to acquire driver
+publish = publish updated files
+
+think model: facts.
+
+think model and publications both derive the acquired data.
+
+
+typed file loop :
+ read
+ eval
+ print
+ publish
+
+
+interface :
+a controlled representation of semantic overlap

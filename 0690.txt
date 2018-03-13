@@ -1,0 +1,7 @@
+
+06090
+ 
+  disequilibrium
+0 -> 9  under attack
+
+keep the loops not leaking sometimes please, as a PoC

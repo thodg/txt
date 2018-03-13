@@ -1,0 +1,5 @@
+
+The "DELETE" button should
+ - respect transactional layers
+ - not scale
+ - not reach outside the architecture.

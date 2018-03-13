@@ -1,0 +1,5 @@
+
+Multifractal filesystem
+
+A file can be mapped as a directory through an application.
+

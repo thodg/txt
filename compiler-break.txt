@@ -1,0 +1,30 @@
+
+Breaking compiler paradigms.
+
+All is just typed data. Streams of typed data.
+
+Code is data for the compiler. Most compilers are complex programs that treat code as a stream of instructions.
+
+Most of the programs are not compilers though. The compiler have this tediuos task of translating the program's code into a binary that a processor understands.
+
+Most programs are stored as seekable streams in source form. Most programs are stored as seekable streams in binary form.
+
+So as programmers we all have a prerequisite notion of what makes a stream in a computer programming language. Most programmers learn streams by programming even before the notion is taught. So in time the "stream" paradigm inherited all idiosyncracies of the languages that were used to teach programming. That is what makes the wizard book great : they truly define streams through very basic operations.
+
+Streams can be a defining property of a language and both their programming interface and implementation details might make you prefer a language over another for performance reasons.
+
+Some languages promote the programs as stream processing agents, with the best results for scalability and operability of simultaneous multi-processing systems :
+ - UNIX
+ - erlang
+
+Not all languages implement streams to their full potential though it is easy to grab it is easy to miss too. The programming interfaces simply do not allow operation of the stream objects to be more than bytes or characters. Many programmers would never think of using a stream for anything other than characters or 8-bit bytes.
+
+Common Lisp has a very particuliar stand point on this matter because it both crystalize this fact by only providing both READ-BYTE and READ-CHAR so its stream classes incur this limitation. But every Lisp programmer coming from another language knows this deeply intimate revelation that Lisp code is made of lists and lists are also a primitive version of streams and you inevitably process them as streams at some point without recognizing them as "Common Lisp streams".
+
+So by providing almost free, pervasive and transient in-memory streams of data as a means to express program code, Common Lisp and maybe all Lisps do the best job to teach by experience what a stream is. However what the specification calls stream classes are very limited, being slightly less expressive than LibC and most Javascript libraries. Common Lisp is shy.
+
+In the end our current architecture is always a central processor unit executing instructions from a binary stream buffered in random access memory.
+
+The future is still very monocore to me.
+
+And now we're going to operate. Operate !

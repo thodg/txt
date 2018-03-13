@@ -1,0 +1,280 @@
+
+I'd like to reclaim the VFS pathnames system to unambiguously describe all philosophical works. Starting with my field of work : programming and using operating systems.
+
+This is a meta reflection on how the kernel/userspace separation forced us to embrace a very powerful abstraction which the VFS file naming system is, and leave it to trivial problems like on-disk storage of potentially large files and directories.
+
+The hierachical filesystems are a very powerful abstraction because beyond the key-value storage properties it allows semantic overlap between stored data and the keys themselves which give context by way of directory hierarchies.
+
+- So why is it kernel-land exactly ?
+- Multi-user access permissions.
+- What about RSA ? It also works across a network. Plus I don't trust the kernel to be the least attack vector of a system.
+
+My goal : a transparently networked multi-platform multi-implementation mean of mapping hierarchical resource names with introspective semantic metadata.
+
+Common idioms from HTTP / URI + REST : Lessons to learn from the web dev crowd :
+
+Resource names are event mapped rather than hierarchically grafted. For instance RailsOnLisp server has a uri routing facility which registers resources and handlers for different parts of the URI space, and beyond (hostname and port can affect routing too). Hostname and BSD sockets are beyond our concern here we just want to take a look at how hierarchical resource pathnames can be used to map resources.
+
+So either the resource is on disk and there is a mapping between URI and disk files. Why not publish this mapping according to a standard, descriptive format ? We do not have such a standard much less a format for generally representing sub-pathname transformations. The simplest mapping between operating system pathnames and URI pathnames.
+
+But most RESTful routing engines were designed to address resources which are not directly on disk. Web applications export all of their content through a hierarchical resource location (URLs). Most use a relational database engine which break this hierarchical aspect of things because an open port on the internet serves one simple purpose. But with machine learning gaining in traction we might see a more aggregate layering of the different interfaces and a general understanding that data is best presented in a hierarchical filesystem. Almost (>99.9%) all of programs and source codes are stored that way nowadays. This should say something for statistics.
+
+The main problem of the VFS is that we use it very early on when using computers and so it grafts itself onto our brain like a natural data structure and start using it and there is an aspect of social conventions and understandability of the categories and subcategories for designing good filesystem layouts. Ruby on Rails is a great example of how filesystem layout improves coworking and publishing readable web software sources. For instance all the application code should go into ./app/, and other providers sources into ./vendor/ . There is a more or less vague consensus about UNIX filesystem hierarchies, often described in hier(7) on these systems. They shape how people will work together so it should be top priority for any project.
+
+Hierarchical file naming systems create a notion of space which you can navigate, like a tree.
+
+Navigating the web is not different and the designers of HTTP and URI RFCs made an effort of maintaining this aspect of things. For the best.
+
+Now there are a few things you can do with REST which you cannot under commonly used filesystems and VFSs :
+ - A resource has a mime-type (btw where is this http://w3.org/.../mime-types/application/elf, etc.)
+ - A resource can be a hierarchy. In UNIX a file cannot be a directory : the namespaces are the same for exhaustive content listing. Conversely HTTP does not provide for standardizing directory contents. This is relegated to HTML content effecting the directory listing. UNIX consitently uses ls(1) and readdir(2) across programs to list directory contents. The web makes it difficult because many resources are mapped at directory addresses so there is no standard location for "directory" listing. lftp(1) addresses this by providing standard UNIX commands over FTP and HTTP by collecting the links on page and re-constructing the inferred file hierarchy. We would make a point of standardizing hierarchical directory listings for HTTP but this is beyond our scope here.
+ - It's easy to do user-space database-backed mounting of live or lazily computed resources onto the URI space. Replicating and sharding data between nodes is another common problem, but beyond our scope here. Most monolithic kernels make mounting filesystems a security concern. Mainly because the hierarchical properties of the VFS to not extend to mount permissions. That and the fact that the standard way to list directories is transactional by way of syscalls to the kernel. Only one thing is sure here : a hierarchical resource naming system needs not to be maintained by a monolithic kernel. Every web app is just some new way to map computed data to URIs so why not imagine the same with VFS pathnames ?
+ - mkfifo is your friend. 
+
+
+------------------------------------------
+
+about semantic urls
+let's read them at ./.index.rdf
+why not .turtle or .n3
+
+Directory mode is orthogonal to file (content) mode.
+Files can also be directories.
+The directories should contain sources or useful links.
+
+/bin/ls.rdf
+/bin/ls.rdf/git/thodg/ls.rdf
+/bin/ls.turtle
+/bin/ls.n3
+etc
+
+ls should be able to print mime-types
+
+symbolic links, whatever that means, should do in most cases.
+
+or rather
+
+every pointer should become a path, lazily fetched or generated.
+data type is some extended mime type
+
+/etc/mime.types/image/jpeg
+> jpg jpeg
+
+If you look at it /etc/mime.types really is a directory of subdirectories of one-liners. Let's have it both and have a binary to derive each other in case of morphism. Just set the triggers and caches and we're go.
+
+So the system really becomes a distributed app server cache over URL-like pathnames.
+
+Now if we compose the execs we should have it for real.
+we distribute /bin/ls/i486-pc-linux-gnu /bin/ls/win32.. i don't know..
+maybe just a shell.
+
+Looks like RESTful really belongs to HTTP now.
+It's what we're looking for really.
+Nothing more.
+No more real difference between a browser and a shell.
+Why not, it's just wrapping a font on pathnames and sizes and types.
+
+We can cache and forward linux sources and binaries to a pool of P2P
+hosts ftp, http... have some kind of dns to path eval-proxy
+
+like mkdir /net/dns/8.8.8.8
+
+/bin/host google.com
+/bin/host/.git/...
+
+It's really just a RESTful VFS with a rdf ls and wget.
+
+It should be easy to mount with fuse or http.
+
+C made the system but what we commonly exchange is mime through REST.
+Why not all become a distributed cache for it ?
+With trust and ledgers plugged in it should burst some ports open.
+
+For content, beyond file type and size we want to know access mode :
+ - http
+ - ftp
+ - local file which we really call 'kernel ABI
+ - AHCI (why not host and trust kernel code right along)
+ - SCSI
+ - ATA IDE
+
+You would just read and write paths that would gradually reduce from http downloads (/bin/ftp) to local filesystem. The local filesystem which really is a log of writes to path + offset is mounted by the kernel whatever that means, but at some point it does ext4 or vfat or ntfs or hfs+.
+
+So why not mount HTTP ?
+Because it is RESTful it is transactional and the layer belongs more to applications. But who cares ? Like lftp we can use the autoindexes at .../index.html to mount data over HTTP. But certainly the kernel should not do that. So maybe the lftp approach is more transparent. Common shell commands wrapped onto a network protocol. Easy. Now with mplayer.. Oh we now have to match the "log of writes to path + offset" with http content. What FUSE does, right ?
+
+So I never studied filesystems but I figured all this by writing HTTP services as they gained traction in business (dotcom, web2) and discovered many ways of doing it, I mean I.T., not caring too much about the OS and C like problems. Providing information technology over the network through HTTP, HTML5, CSS, was fun because it was a new ABI and it's an ABI that is commonly written in base UTF-8 so it's easy to read and write and set up a git and collaborate and share data, and share trust and fb connect, google auth etc. A very polymorphic environment as you can also rent hardware in a datacenter, install whatever epic distribution you have on your mind, configure the shit out of it with puppet or chef or adams through ssh or ssvnc, setup the weirdest latest million connections Common Lisp HTTP server, write your own semantic database engine within it, and which step is it ... ? profit !
+
+What I really mean is that the de-facto common VFS API since Y2K really is
+https://www.ietf.org/rfc/rfc1738.txt
+We should have a cached version of this RFC (1738) ready at `man url`...
+And so a handsome part of UNIX is not really obsolete but rather deprecated in term of start-up mentality of "where to put things" in 2010's.
+
+A good question to ask is 
+
+So let's have it the other way around : from sh and djb we know about exec, from lftp we know about extending ls and why not fetch the right binary or sources and compile it for mplayer and such pieces of software. Pretty much what Steam engineers must play with today : multi platforms. I would say all apps and marketplaces operate on RESTful HTTP in 2018. A minority of trading too, which is growing steadily with bitcoin adoption.
+
+So if the file system becomes the system because that's where you get your executables and applications from at some point it's bound to go through a HTTP then to disk through a series of writes and probably to memory mapped outputs.
+
+-----
+
+It's also about having a disk that can boot the machine.
+
+I boot from a 32 bit BIOS loading Gentoo Linux from S-ATA. I don't speak BIOS. I don't speak S-ATA. I speak 32 bit. What am I left with ?
+
+I can learn BIOS, I can learn S-ATA, it's easy. UEFI sucks. It's way too complicated. Like IPv6 : useless robotic crap.
+
+Packing sane defaults. Drivers and git should become mount points.
+/example/lib/service
+
+Daemontools (cr.yp.to) is interesting. Supervision trees are more interesting even.
+
+-----
+
+About the sexuality of operating systems.
+
+The original system exports itself through all protocols in vigor : disks, ftp, http, bittorrent. It has to route you through the right architecture reflected in the URL. It must write some installation program to a bootable disk. You have to choose the boot disk when your computer starts. Now it's alive. I never checked the SSL certificate.
+
+It's alive. Point it at some random mirror and instruct it to attack, I mean download the whole rest of the system. Because yes, you have to feed it. It's like a tamagochi. Ubuntu currently recommends a 15 Gb root partition. Windows keeps downloading updates.
+
+It makes no sense. You do not need 15 thousand of millions of 8 packed indecisions to truly know you know computers because you know binary what your computer is woing, FFS. OH BUT WE TRUST IT. Because we use it. User trust is unaltered use of a URL VFS. That's all. Let me carve it more bold at space one.
+
+ User trust is unaltered repeated use of a URL VFS.
+
+There you go.
+
+Oh that's just the preliminaries. I could fill a building with printed books about these parts of the act. Download, install, ???, profit.
+
+It's taken over. I tell you it's alive ! It downloads a few compilers, tons of git repositories and proceeds about "making" them. A few days later a new package repository is online and running, ready to mate.
+
+It also exports all kinds of informations about how to INSTALL ! The others had to hide behind commercial vendors because they were shouting too loud. I'm telling you. I decided I hate dance music now.
+
+----
+
+global process
+
+pull distro
+push new host
+boot new host
+pull distro from new host
+
+----
+
+It's like a Von Neuman architecture but with data addresses replaced by URIs and CPU operations replaced by REST verbs.
+
+----
+  ______________
+ |     URI      |
+ | Unified      |
+ | Resource     |
+ | Identifier   |
+ |──────────────|
+ | +scheme      | 
+ | +user        |
+ | +password    |
+ | +host        |
+ | +port        |
+ | +path        |
+ | +query       |
+ | +fragment    |
+ |______________| <──
+  ______________     |
+ |     URL      | ___|                  <--- HTTP query
+ | Unified      | ∞____
+ | Resource     | ∞__  |
+ | Location     |    | |
+ |______________|    | |
+  ______________     | |
+ |   Service    | 1__| |
+ |--------------|      |
+ | +host        |      |
+ | +port        |      |
+ |______________|      |
+  ______________       |           
+ |    LRL       | 1____|                <--- Local query
+ | Local        |
+ | Resource     |
+ | Location     |
+ |--------------|
+ | +directories |
+ | +name        |
+ | +type        |
+ |______________|
+
+URL to LRL mapping
+ ftp
+ sftp
+ http
+ https
+ rsync
+
+----
+
+In our sleep and travels, we became the filesystem.
+It is persistence 666.
+
+ and then
+
+Everything is on a network now,
+The DOS & UNIX VFS will be affected towards URI and REST.
+
+----
+
+Let's take the VFS out of the kernel and about the APIs.
+
+----
+
+platforms
+
+x86
+x86_64
+macppc
+SPARC v8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------
+
+Rings of trust
+==============
+
+Ring
+ - function
+ - expectations
+ - participants
+ - i/o addresses :
+ |- snapshot of state
+ `- stream of updates
+ - cryptography (i/o integrity, permissions & trust)
+
+Permission
+ - Allow or disallow ring access to participants
+ - Public key cryptography (RSA, ECDSA)
+
+Trust
+ - Signing of public keys
+

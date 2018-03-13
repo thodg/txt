@@ -1,0 +1,15 @@
+
+bid/ask
+id
+user
+price
+volume
+(sum)
+wait
+
+~/txrx
+#!/usr/local/bin/txrx-watch ./in ./txrx.fifo
+wait ./wait
+wait ./backup/wait
+reject ./reject
+reject ./backup/reject
