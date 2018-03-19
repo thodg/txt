@@ -1,0 +1,11 @@
+
+ Olivier Thomas, Drome, France.
+  kernel was proposed
+  RX with low voltage by ITA8 and me, enough to stop working after 30 minutes
+  TSX at POR8 by him
+  afterwards i got allergic and both ITA8 and I broke AT6.
+
+ Thibault Reuille, with overstated support for wine, mostly reading. California, USA.
+  provided directory listings, one reached far north.
+  
+ Actual teachings by CIB itself on internet.

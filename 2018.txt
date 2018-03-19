@@ -1,5 +1,30 @@
 2018: Le café bleu n'existe toujours pas.
 
+---
+
+I still do not know how to program graphics and audio code. No good language.
+Candidates by order of ease of programming.
+ Basic sucks it's mamma's tits, not mine.
+ C is too verbose, no rational types.
+ Do has no compiler. I might make it happen with X persons and Y years.
+ D is too verbose, no rational types.
+ Most Lisp are garbage collected and do not really differenciate static types from dynamic types.
+ ML languages are garbage collected and are plain ugly, sorry.
+ JS is garbage collected and hard to write (harder than C and CL, maybe not C++) and has no static binary types.
+ C++ is too verbose, half assed rational types, crippling operators.
+ Java is not targeting the hardware I work on, great idea guys come again. Oh make it a phone, hahaha. Truly, go fuck yourselves.
+ /bin/sh, for the tits.
+ Sed and awk look good now.
+ perl ?
+  
+ at some point it should produce assembly for a hardware platform 
+  the more I learn the more despair  
+  
+It's like it's made to be impossible to do with only one grammar.
+I do not see the point in that.
+
+---
+
 WE'RE ALL SAYING : FUCK GAUSS ><;
 FUCK GAUSS !
 FIND HIS TUMB AND BREAK EVERY FUCKING THING
