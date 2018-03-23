@@ -1,11 +1,21 @@
 
- Olivier Thomas, Drome, France.
-  kernel was proposed
-  RX with low voltage by ITA8 and me, enough to stop working after 30 minutes
+
+ Olivier Thomas, Drome, France. Proposed kernel review.
+  RX with low voltage by ITA8 and me, but stopped working after 30 minutes
   TSX at POR8 by him
-  afterwards i got allergic and both ITA8 and I broke AT6.
+  afterwards i got allergic but really both ITA8 and I broke two AT6 to add support for end users.
+  a few years later i was recontacted but ended in plonk because of disagreements over SCO and origins of Lisp, mostly politics.
+
 
  Thibault Reuille, with overstated support for wine, mostly reading. California, USA.
-  provided directory listings, one reached far north.
-  
+  only provided directory listings, one reached far north.
+  still owes me money.
+
+
  Actual teachings by CIB itself on internet.
+  their end users actually mostly play wargames and self destruction.
+  their deployment of enlightenment mostly sucks goats.
+
+
+ Thanks for all the fish. I hope I will see these guys again whole maybe.
+  I'm not hungry at all. However I still keep a lot of disk space for them.
