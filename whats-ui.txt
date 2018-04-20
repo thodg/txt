@@ -1,0 +1,53 @@
+  
+ WHATS UI WHATS UI WHATS UI 
+  
+ FFS 
+  
+ 20 years in IM STILL BORED TO DEATH 
+  
+ Why hasn't C+CL fixed UI yet, it makes no sense. 
+  
+ WWW has decided UI is HTML CSS JAVASCRIPT 
+ It sucks, it's slow, it's hard to do and it's stupid to use. 
+
+ It did not ABI. It sucks, it's slow. 
+
+ CSS did give LESS and SASS which are less key-value but more rational versions of CSS. It works great but harder to sell to others. 
+
+ 34 (almost) killed grammarians +_+; mouahahaha 
+
+ There are many S-EXP to HTML languages but none of them grew into true widget libraries. 
+ 
+ You just have to be able to render HTML+CSS+JS for it to be better. 
+ It's getting harder and harder. 
+
+ You have to stream update info on 2D regions. Does it ring any bells ? 
+ Once H264 got to it it said "MOTHER!" hahaha 
+  
+ I mean, it's gonna fork so hard, some people are going to fall so hard on their heads for this mess. 
+
+ I want to know the true ontological nature of finite discrete 2+D UI. 
+ It should be very easy to write. I think TK has a start. 
+ I think GTK has a growth. 
+ I think QT has a cleanse. 
+  I think QT has absolutely no reason to be so complicated.  
+ We see ourselves move very slow. As a crowd, working her killing. 
+ But a Linux has all that. 
+  
+ I think OpenGL has a very strong point.
+ They sure do WWW->OpenGL out there. 
+ 2 2 1 1 2 1. rince and repeat. 
+  
+ It's a grammar star made to make programmers suffer in pain longest possible.
+  
+ Other question is why would X11 be needed for OpenGL to work ? 
+  It makes no sense.  
+  
+ Please help me, why is OpenGL still only reserved as a sub-resource of WM ??
+
+ We should boot Linux full OpenGL.
+
+ Why I won't start demoing. Current system layout sucks too much for me to write code in it. I won't build there it's too dirty. It's perfectly calibrated between nice enough to be used, but too shitty to really build on it. It's like it's made to make you crazy. And you can't possibly know who to talk to to change that. 
+  
+ People don't even get why xcb sucks so much. What can we do..
+
