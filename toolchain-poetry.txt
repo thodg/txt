@@ -1,0 +1,39 @@
+
+binutils
+ almost zero dependencies (ABIDL)
+ fast but exhaustive
+ allows compiling for any combination of hardware and application binary interface
+ respects integrity of hardware and compiler design
+ many conforming implementations in many languages
+
+gcc-bootstrap
+ only depends on binutils
+ absolutely incorruptible
+ bootstraps a working gcc from hardware and application binary interface description languages
+ repects integrity of hardware and ABIDL design
+ implemented in assembly for any hardware and ABI combination
+
+gcc
+ almost zero dependencies (gcc and binutils)
+ fast but exhaustive
+ retains its own semantics without corruption
+ allows compiling of programs for any combination of hardware, application binary interface and programming language
+ self-compiling
+ allows programming in C in a standard and portable way, without notions of hardware or application binary interface requirements
+ has a canonical output option for standardized code production (non ambiguous, exhaustive, totally ordered output for a given hardware and ABI combination) for formal proofs of ABIDL programs and trusted computing.
+
+libc
+ almost zero dependencies (kernel headers)
+ fast but unbreakable
+ allows programming in C in a standard and portable way, without notions of hardware or application binary interface requirements
+ implemented in C
+
+kernel
+ zero dependencies
+ enforces resource contention 
+ respects libc
+
+Please hire me, Thomas de Grivel <thoxdg@gmail.com> 0614550127
+ I do not understand time requirements, and do appreciate money.
+Or just send BTC 1ERnTsC8n2mKEB3AWBXV22tiaqzb8S4H3a
+ or even better PIVX DB2Ht8bkzKqU4jdLAYNq86k7w7ZDtCwTqh
