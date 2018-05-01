@@ -1,0 +1,35 @@
+
+Video CODEC
+ : Coder/Decoder for video format.
+ Sound is not considered at this stage.
+ One library for encoding, one library for decoding.
+ One program for encoding, one program for decoding.
+ For each codec, four binaries.
+
+Multiple codecs
+ Most current video software support multiple codecs.
+ The libraries you can merge into one program.
+ The programs you have to find consensus for image format.
+
+Multiple codec programs consensus
+ All codec programs should support PNG, TGA, JPEG2K
+
+
+Container formats
+ MP4
+ AVI
+ MKV
+ MPG
+ VOB
+
+Video codecs
+ H264
+ MPEG2
+ MPEG4
+ XVID
+
+Audio codecs
+ MP3
+ AAC
+ AC3
+ MP2
