@@ -1,0 +1,19 @@
+
+Cryptography. The name of the why when.
+
+"We're all to pass this gate to feel safe !"
+ADD SSL EVERYWHERE, FEEL THE SAFERY, YUM ! !
+
+How safe can we be ourselves when cleartext is not deemed enough to be safe ?
+Should we encrypt processes too ? And write encrypted code ?
+
+I mean with VLANS and real time redundant virtual routers who cares about cryptography anymore.
+
+The only true difference is wether the routing of packets has a log
+embedded. Can you debug the essence of power publicly signing its evil
+deeds. I need to know what you call knowing.
+
+At some point, things just work, or they don't. SSL works, but cleartext
+works fairly well too in a sane computer environment and puts a lot less
+pressure on the CPU. I need to know, why is cleartext not good enough ?
+As a law. Be a cleartext person, please.
