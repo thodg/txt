@@ -1,0 +1,9 @@
+
+Limited programming, for good limits are good :
+
+ - One loop per stack level (function). Helps debugging and reading code.
+
+ - Share memory only through streams. Non-blocking stream programming is king of SMP.
+
+ - 80x25 character window per function.
+
