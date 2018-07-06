@@ -11,7 +11,7 @@ Work from source repositories
  Repo [3]
 
 Code quality
- 80x25 functions
+ 72x25 functions
  One loop per function, preferred is LOOP with symbolic expressions.
  Only share memory through cl-stream for SMP.
  CL packages as programming interfaces, or domain specific languages.

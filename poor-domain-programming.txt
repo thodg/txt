@@ -1,0 +1,25 @@
+
+The fastening riches of lean domain programming.
+
+Lean domain programming encourages meaningful namespacing.
+
+Key idea : to view dependency increments as a limiting factor to domain
+extensions.
+
+Ideally each domain connects two other domains.
+Dependency sets can then be minimized easily to match a specific feature set.
+Expressiveness is maximized.
+
+When the feature set is tightly linked to a dependency set
+with meaningful namespacing :
+ The need for documentation decreases dramatically.
+ The code becomes easier to read.
+ The code becomes difficult to make shorter.
+ Everything is faster to learn, use, debug, hack.
+
+This is my main code quality metric right now,
+I think big packages that pull an amazing work with lots of dependencies
+ought to be cut to parts and rationalized for the best implementations.
+The rise of SBCL and Clasp will ease into that direction probably.
+To remove the language gap introduced by big integrated compiler
+systems.

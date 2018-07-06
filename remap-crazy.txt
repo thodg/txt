@@ -1,0 +1,16 @@
+
+So there is this nice operating system.
+
+You have unified URI and URL to rule all I/O.
+
+Now you have to specify SATA://pci/1:0/ to be automounted on
+EXT4://b/ to make it work.
+
+Mounting on a VFS seems to be about ignoring protocols.
+
+Is there nothing wrong with mounting FTP and HTTP endpoints ?
+
+Or is there some willingness to just remind us about HTTP
+like an AD for a virus.
+
+It's all a big time shared distributed vitual filesystem.

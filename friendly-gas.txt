@@ -1,0 +1,7 @@
+
+A semiconductor gas computer.
+
+He made a fatal mistake : one fork bomb in priviledged mode and the whole processor was litterally blown away, it took less than a micro-second for the gas to align all its gates to zero processing until reaching out to its thinly wired bakelite tube surface. Actually it was not a mistake, it was just a routine test. It's even expected from the self forming gas processor he's designing and he's just so glad to have wiped it out to clean pattern state with one simple command. The program could be written : WIPE LOCAL GATES, FORK TO RANDOM NEAR GATE WITH PROBABILITY 1/SQUARE(SIZEOF(PROGRAM)). And the fork bomb would explode into clean logic gates for a few microseconds.
+
+Of course the logic gates are in 3D. Plus the gas allows for some movement of its particles. It's basically a reprogrammable 3D array of soft electronic transistors made out of homogeneous gas components trapped in a cheap bakelite vacuum full of copper connectors all leading to a standardized gaseous CPU socket.
+
