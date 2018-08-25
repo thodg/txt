@@ -1,0 +1,48 @@
+
+Functional space is isomorphic to N because of inductive properties of [1..n] x [1..n - 1] for all n in N.
+
+We call the natural functional space of order n the contiguous but bracketed exclusions of n of size n
+
+0 ->
+1 -> 2
+2 -> 1 3
+3 -> 1 2 4#2 4 5
+4 -> 1 2 3 5#2 3 5 6#3 5 6 7
+5 -> 1 2 3 4 6#2 3 4 6 7#3 4 6 7 8#4 6 7 8 9
+6 -> 1 2 3 4 5 7#2 3 4 5 7 8#3 4 5 7 8 9#4 5 7 8 9 A#5 7 8 9 A B
+7 -> 1 2 3 4 5 6 8#2 3 4 5 6 8 9#3 4 5 6 8 9 A#4 5 6 8 9 A B#5 6 8 9 A B C#6 8 9 A B C D#
+8 -> 1 2 3 4 5 6 7 9#2 3 4 5 6 7 9 A#3 4 5 6 7 9 A B#4 5 6 7 9 A B C#5 6 7 9 A B C D#6 7 9 A B C D E#7 9 A B C D E F
+9 -> 1 2 3 4 5 6 7 8 A#2 3 4 5 6 7 8 A B#3 4 5 6 7 8 A B C#4 5 6 7 8 A B C D#5 6 7 8 A B C D E#6 7 8 A B C D E F#7 8 A B C D E F G#8 A B C D E F G H
+
+0 ->
+1 -> 2
+2 -> 1 3
+3 -> 1 2 4            #2 4 5
+4 -> 1 2 3 5          #2 3 5 6          #3 5 6 7
+5 -> 1 2 3 4 6        #2 3 4 6 7        #3 4 6 7 8        #4 6 7 8 9
+6 -> 1 2 3 4 5 7      #2 3 4 5 7 8      #3 4 5 7 8 9      #4 5 7 8 9 A      #5 7 8 9 A B
+7 -> 1 2 3 4 5 6 8    #2 3 4 5 6 8 9    #3 4 5 6 8 9 A    #4 5 6 8 9 A B    #5 6 8 9 A B C    #6 8 9 A B C D    #
+8 -> 1 2 3 4 5 6 7 9  #2 3 4 5 6 7 9 A  #3 4 5 6 7 9 A B  #4 5 6 7 9 A B C  #5 6 7 9 A B C D  #6 7 9 A B C D E  #7 9 A B C D E F
+9 -> 1 2 3 4 5 6 7 8 A#2 3 4 5 6 7 8 A B#3 4 5 6 7 8 A B C#4 5 6 7 8 A B C D#5 6 7 8 A B C D E#6 7 8 A B C D E F#7 8 A B C D E F G#8 A B C D E F G H
+
+This is canonicalized representation of computable functions in the logic space, embeddable in N.
+
+We call the natural typed functional spaces of order n the contiguous but bracketed exclusions of n+1 of size n+1
+
+
+Functional type spaces are given by counting image function spaces.
+For order n there are L^(n-1) types and L^n functions so for order n there are L^(2n-1) typed functions.
+
+0 -> 0      (void, nil, bottom, false, empty list, empty set, you name it)
+1 -> 1      (constants, L)
+2 -> 1      (functions of constants)
+3 -> 2      (functions of functions of constants)
+4 -> 3      (functions of functions of functions of constants)
+5 -> 4      (etc)
+n -> n - 1
+
+So if there are L^n types, there can be L^(n+1) functions of each type.
+
+It also means that any function can be made to be defined on other functions .
+
+And this is why NAND is not an option for us right now.

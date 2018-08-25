@@ -1,0 +1,32 @@
+# /dev/rsd0c:
+type: SCSI
+disk: SCSI disk
+label: HGST HTS721010A9
+duid: c3a2803529c6cf90
+flags:
+bytes/sector: 512
+sectors/track: 63
+tracks/cylinder: 240
+sectors/cylinder: 15120
+cylinders: 129201
+total sectors: 1953525168
+boundstart: 0
+boundend: 1953525168
+drivedata: 0 
+
+16 partitions:
+#                size           offset  fstype [fsize bsize   cpg]
+  a:          2097136        130047120  4.2BSD   2048 16384 12958 # /
+  b:          4715256        132144256    swap                    # none
+  c:       1953525168                0  unused                    
+  d:          8388576        136859520  4.2BSD   2048 16384 12958 # /tmp
+  e:         16770528        145248096  4.2BSD   2048 16384 12958 # /var
+  f:          4194304        162018624  4.2BSD   2048 16384 12958 # /usr
+  g:          2097152        166212928  4.2BSD   2048 16384 12958 # /usr/X11R6
+  h:         20971520        168310080  4.2BSD   2048 16384 12958 # /usr/local
+  i:          4203297               63  ext2fs                    
+  j:        125843760          4203360  ext2fs                    
+  k:          8382144        189281600  4.2BSD   2048 16384 12958 # /usr/src
+  l:         41942880        197663744  4.2BSD   2048 16384 12958 # /usr/obj
+  m:         41942880        239606624  4.2BSD   2048 16384 12958 # /usr/ports
+  n:         41942880        281549504  4.2BSD   2048 16384 12958 # /home

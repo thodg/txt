@@ -1,0 +1,39 @@
+
+Functional space is isomorphic to N because of inductive properties of [1..n] x [1..n - 1] for all n in N.
+
+for n in N, collect contiguous bracketed exclusions of n of size n
+
+0 ->
+1 -> 2
+2 -> 1 3
+3 -> 1 2 4#2 4 5
+4 -> 1 2 3 5#2 3 5 6#3 5 6 7
+5 -> 1 2 3 4 6#2 3 4 6 7#3 4 6 7 8#4 6 7 8 9
+6 -> 1 2 3 4 5 7#2 3 4 5 7 8#3 4 5 7 8 9#4 5 7 8 9 A#5 7 8 9 A B
+7 -> 1 2 3 4 5 6 8#2 3 4 5 6 8 9#3 4 5 6 8 9 A#4 5 6 8 9 A B#5 6 8 9 A B C#6 8 9 A B C D#
+8 -> 1 2 3 4 5 6 7 9#2 3 4 5 6 7 9 A#3 4 5 6 7 9 A B#4 5 6 7 9 A B C#5 6 7 9 A B C D#6 7 9 A B C D E#7 9 A B C D E F
+9 -> 1 2 3 4 5 6 7 8 A#2 3 4 5 6 7 8 A B#3 4 5 6 7 8 A B C#4 5 6 7 8 A B C D#5 6 7 8 A B C D E#6 7 8 A B C D E F#7 8 A B C D E F G#8 A B C D E F G H
+
+0 ->
+1 -> 2
+2 -> 1 3
+3 -> 1 2 4            #2 4 5
+4 -> 1 2 3 5          #2 3 5 6          #3 5 6 7
+5 -> 1 2 3 4 6        #2 3 4 6 7        #3 4 6 7 8        #4 6 7 8 9
+6 -> 1 2 3 4 5 7      #2 3 4 5 7 8      #3 4 5 7 8 9      #4 5 7 8 9 A      #5 7 8 9 A B
+7 -> 1 2 3 4 5 6 8    #2 3 4 5 6 8 9    #3 4 5 6 8 9 A    #4 5 6 8 9 A B    #5 6 8 9 A B C    #6 8 9 A B C D    #
+8 -> 1 2 3 4 5 6 7 9  #2 3 4 5 6 7 9 A  #3 4 5 6 7 9 A B  #4 5 6 7 9 A B C  #5 6 7 9 A B C D  #6 7 9 A B C D E  #7 9 A B C D E F
+9 -> 1 2 3 4 5 6 7 8 A#2 3 4 5 6 7 8 A B#3 4 5 6 7 8 A B C#4 5 6 7 8 A B C D#5 6 7 8 A B C D E#6 7 8 A B C D E F#7 8 A B C D E F G#8 A B C D E F G H
+
+This is canonicalized representation of computable functions of the logic space, embeddable in N.
+
+Functional type spaces are induced from functions.
+
+0 -> 0
+1 -> 1
+2 -> 1
+3 -> 2
+4 -> 3
+5 -> 4
+n -> n - 1
+

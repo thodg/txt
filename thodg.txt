@@ -1,0 +1,27 @@
+
+I'm a programmer.
+So I tried to ditch the team, and company management.
+
+Compared to a team of 3, one could think I'm 3 times slower.
+
+But to communicate and think about some new idea I'm actually
+faster than the whole team by a factor of fact(3), so in
+this case 6. It will take 6 times more time for a team to
+fully understand the necessary ramifications of a new concept
+than for me, alone. Divided by 3 since they are 3 means I will
+be 2 times faster than each one of them. That is because they
+need to communicate and aggregate parts of the ideas they
+manipulate to each other.
+
+And so that would mean that Java development can be made slower
+by adding people to the project.
+
+And to learn I'm less disturbed so I can do a lot of reading.
+
+I got more and more time to discern for myself what are powerful
+abstractions and what is total fluff in the modern computing industry.
+
+I'm a pretty good Lisper now.
+
+That is how I translated the literal phrase "beating the average".
+Actually start ups are beating 1/FIB, and they do it easily.
