@@ -1,5 +1,15 @@
 
-Avec bitcoin on sait maintenant faire + et - de maniere
-décentralisée.
+export BDB_PREFIX=/home/dx/c/oracle/db4/
 
-TAZ = filesystem décentralisé
+./configure BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include" CC=cc CXX=c++ --prefix="$PWD/obsd386" --with-gui=no
+
+
+
+Bitcoin
+ Wallet
+  Private key
+  Address
+ Blockchain
+  Transaction
+  Block
+ P2P
