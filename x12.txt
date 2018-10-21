@@ -1,0 +1,35 @@
+
+device      /dev/drm
+owner       _xd
+group       _xd
+permissions 0660
+
+daemon /usr/bin/xd
+configuration
+ sockets
+ graphics
+ initialization
+
+libx
+ definition of messages
+  keyboard
+  mouse
+  graphic primitives
+ routing of messages in message queues
+
+deamon
+ multiplexes connected client message queues using kqueue
+ dispatches the messages according to libx routing.
+
+client (user:group, really is just user priviledge separation)
+ connects to grab a message bus from server
+ allows defining private message queues
+ routing of messages in server and private message queues using libx
+ can launch multiple programs on same connection, in this case the
+ client acts as a master bus for the program messages
+
+programs
+ grab a message bus (from environment ?)
+ create window (rectangular screen regions) hierarchies
+ bind event handlers to windows
+ use libx to route window events

@@ -1,0 +1,6 @@
+
+how to reduce micro pest ?
+* pkill nymphs
+* pkill nymph builders
+* rm nymph builder sources
+[...]

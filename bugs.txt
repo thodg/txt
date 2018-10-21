@@ -1,0 +1,216 @@
+Thinkpad T60
+Radeon X1300
+OpenBSD 6.3
+
+        without ppb or drm :
+                suspend to ram does not resume VGA
+                X11 not starting
+
+        X11 back to wscons (C-M-F[1234])
+                does not clear video memory
+
+dmesg :
+OpenBSD 6.3 (GENERIC) #490: Sat Mar 24 14:31:33 MDT 2018
+    deraadt@i386.openbsd.org:/usr/src/sys/arch/i386/compile/GENERIC
+cpu0: Intel(R) Core(TM)2 CPU T7600 @ 2.33GHz ("GenuineIntel" 686-class) 2.33 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,TM,PBE,NXE,LONG,SSE3,DTES64,MWAIT,DS-CPL,VMX,EST,TM2,SSSE3,CX16,xTPR,PDCM,LAHF,PERF,SENSOR
+real mem  = 2145730560 (2046MB)
+avail mem = 2092691456 (1995MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: date 12/22/06, BIOS32 rev. 0 @ 0xfd6b0, SMBIOS rev. 2.4 @ 0xe0010 (68 entries)
+bios0: vendor LENOVO version "79ETC9WW (2.09 )" date 12/22/2006
+bios0: LENOVO 2008GEG
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S3 S4 S5
+acpi0: tables DSDT FACP SSDT ECDT TCPA APIC MCFG HPET SLIC BOOT SSDT SSDT SSDT SSDT SSDT
+acpi0: wakeup devices LID_(S3) SLPB(S3) EXP0(S4) EXP1(S4) EXP2(S4) EXP3(S4) PCI1(S4) USB0(S3) USB1(S3) USB2(S3) USB7(S3) HDEF(S4)
+acpitimer0 at acpi0: 3579545 Hz, 24 bits
+acpiec0 at acpi0
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 166MHz
+cpu0: mwait min=64, max=64, C-substates=0.2.2.2.2, IBE
+ioapic0 at mainbus0: apid 1 pa 0xfec00000, version 20, 24 pins
+acpimcfg0 at acpi0 addr 0xf0000000, bus 0-63
+acpihpet0 at acpi0: 14318179 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus 1 (AGP_)
+acpiprt2 at acpi0: bus 2 (EXP0)
+acpiprt3 at acpi0: bus 3 (EXP1)
+acpiprt4 at acpi0: bus 4 (EXP2)
+acpiprt5 at acpi0: bus 12 (EXP3)
+acpiprt6 at acpi0: bus 21 (PCI1)
+acpicpu0 at acpi0: !C2(500@1 mwait.1@0x10), C1(1000@1 mwait.1), PSS
+acpipwrres0 at acpi0: PUBS, resource for USB0, USB2, USB7
+acpitz0 at acpi0: critical temperature is 127 degC
+acpitz1 at acpi0: critical temperature is 99 degC
+acpibtn0 at acpi0: LID_
+acpibtn1 at acpi0: SLPB
+"IBM0057" at acpi0 not configured
+acpibat0 at acpi0: BAT0 model "93P5030" serial  1234 type LION oem "SANYO"
+acpiac0 at acpi0: AC unit online
+acpithinkpad0 at acpi0
+acpidock0 at acpi0: GDCK not docked (0)
+acpivideo0 at acpi0: VID_
+acpivout0 at acpivideo0: LCD0
+acpivideo1 at acpi0: VID_
+acpivout at acpivideo1 not configured
+bios0: ROM list: 0xc0000/0xfe00 0xd0000/0x1000 0xd1000/0x1000 0xe0000/0x10000!
+cpu0: Enhanced SpeedStep 2327 MHz: speeds: 2333, 2000, 1667, 1333, 1000 MHz
+pci0 at mainbus0 bus 0: configuration mode 1 (bios)
+pchb0 at pci0 dev 0 function 0 "Intel 82945GM Host" rev 0x03
+ppb0 at pci0 dev 1 function 0 "Intel 82945GM PCIE" rev 0x03: apic 1 int 16
+pci1 at ppb0 bus 1
+radeondrm0 at pci1 dev 0 function 0 "ATI Radeon Mobility X1300 M52-64" rev 0x00
+drm0 at radeondrm0
+radeondrm0: apic 1 int 16
+azalia0 at pci0 dev 27 function 0 "Intel 82801GB HD Audio" rev 0x02: msi
+azalia0: codecs: Analog Devices AD1981HD, Conexant/0x2bfa, using Analog Devices AD1981HD
+audio0 at azalia0
+ppb1 at pci0 dev 28 function 0 "Intel 82801GB PCIE" rev 0x02: apic 1 int 20
+pci2 at ppb1 bus 2
+em0 at pci2 dev 0 function 0 "Intel 82573L" rev 0x00: msi, address 00:16:41:e6:b5:96
+ppb2 at pci0 dev 28 function 1 "Intel 82801GB PCIE" rev 0x02: apic 1 int 21
+pci3 at ppb2 bus 3
+wpi0 at pci3 dev 0 function 0 "Intel PRO/Wireless 3945ABG" rev 0x02: msi, MoW2, address 00:19:d2:98:5e:03
+ppb3 at pci0 dev 28 function 2 "Intel 82801GB PCIE" rev 0x02: apic 1 int 22
+pci4 at ppb3 bus 4
+ppb4 at pci0 dev 28 function 3 "Intel 82801GB PCIE" rev 0x02: apic 1 int 23
+pci5 at ppb4 bus 12
+uhci0 at pci0 dev 29 function 0 "Intel 82801GB USB" rev 0x02: apic 1 int 16
+uhci1 at pci0 dev 29 function 1 "Intel 82801GB USB" rev 0x02: apic 1 int 17
+uhci2 at pci0 dev 29 function 2 "Intel 82801GB USB" rev 0x02: apic 1 int 18
+uhci3 at pci0 dev 29 function 3 "Intel 82801GB USB" rev 0x02: apic 1 int 19
+ehci0 at pci0 dev 29 function 7 "Intel 82801GB USB" rev 0x02: apic 1 int 19
+usb0 at ehci0: USB revision 2.0
+uhub0 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+ppb5 at pci0 dev 30 function 0 "Intel 82801BAM Hub-to-PCI" rev 0xe2
+pci6 at ppb5 bus 21
+cbb0 at pci6 dev 0 function 0 "TI PCI1510 CardBus" rev 0x00: apic 1 int 16
+cardslot0 at cbb0 slot 0 flags 0
+cardbus0 at cardslot0: bus 22 device 0 cacheline 0x8, lattimer 0xb0
+pcmcia0 at cardslot0
+ichpcib0 at pci0 dev 31 function 0 "Intel 82801GBM LPC" rev 0x02: PM disabled
+pciide0 at pci0 dev 31 function 1 "Intel 82801GB IDE" rev 0x02: DMA, channel 0 configured to compatibility, channel 1 configured to compatibility
+atapiscsi0 at pciide0 channel 0 drive 0
+scsibus1 at atapiscsi0: 2 targets
+cd0 at scsibus1 targ 0 lun 0: <HL-DT-ST, RW/DVD GCC-4247N, 1.02> ATAPI 5/cdrom removable
+cd0(pciide0:0:0): using PIO mode 4, Ultra-DMA mode 2
+pciide0: channel 1 ignored (disabled)
+ahci0 at pci0 dev 31 function 2 "Intel 82801GBM AHCI" rev 0x02: msi, AHCI 1.1
+ahci0: port 0: 1.5Gb/s
+scsibus2 at ahci0: 32 targets
+sd0 at scsibus2 targ 0 lun 0: <ATA, HGST HTS721010A9, JB0O> SCSI3 0/direct fixed naa.5000cca836caddc9
+sd0: 953869MB, 512 bytes/sector, 1953525168 sectors
+ichiic0 at pci0 dev 31 function 3 "Intel 82801GB SMBus" rev 0x02: apic 1 int 23
+iic0 at ichiic0
+usb1 at uhci0: USB revision 1.0
+uhub1 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb2 at uhci1: USB revision 1.0
+uhub2 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb3 at uhci2: USB revision 1.0
+uhub3 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+usb4 at uhci3: USB revision 1.0
+uhub4 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+isa0 at ichpcib0
+isadma0 at isa0
+pckbc0 at isa0 port 0x60/5 irq 1 irq 12
+pckbd0 at pckbc0 (kbd slot)
+wskbd0 at pckbd0: console keyboard
+pms0 at pckbc0 (aux slot)
+wsmouse0 at pms0 mux 0
+wsmouse1 at pms0 mux 0
+pms0: Synaptics touchpad, firmware 6.2, 0x81a0b1 0x300000
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+aps0 at isa0 port 0x1600/31
+npx0 at isa0 port 0xf0/16: reported by CPUID; using exception 16
+vscsi0 at root
+scsibus3 at vscsi0: 256 targets
+softraid0 at root
+scsibus4 at softraid0: 256 targets
+root on sd0a (c3a2803529c6cf90.a) swap on sd0b dump on sd0b
+radeondrm0: 1024x768, 32bpp
+wsdisplay0 at radeondrm0 mux 1: console (std, vt100 emulation), using wskbd0
+wsdisplay0: screen 1-5 added (std, vt100 emulation)
+WARNING: R/W mount of /release denied.  Filesystem is not clean - run fsck
+WARNING: R/W mount of /dest denied.  Filesystem is not clean - run fsck
+WARNING: R/W mount of /usr/xobj denied.  Filesystem is not clean - run fsck
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+uhub1 detached
+uhub2 detached
+uhub3 detached
+uhub4 detached
+uhub0 detached
+uhub0 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub1 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub2 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub3 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub4 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+drm:pid68803:radeon_bo_unpin *WARNING* 0xd55656b0 unpin not necessary
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+uhub0 detached
+uhub1 detached
+uhub2 detached
+uhub3 detached
+uhub4 detached
+uhub0 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub1 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub2 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub3 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub4 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+drm:pid68803:radeon_bo_unpin *WARNING* 0xd55656b0 unpin not necessary
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+uhub0 detached
+uhub1 detached
+uhub2 detached
+uhub3 detached
+uhub4 detached
+uhub0 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub1 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub2 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub3 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub4 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+drm:pid68803:radeon_bo_unpin *WARNING* 0xd55656b0 unpin not necessary
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+uhub0 detached
+uhub1 detached
+uhub2 detached
+uhub3 detached
+uhub4 detached
+uhub0 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub1 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub2 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub3 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub4 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+drm:pid68803:radeon_bo_unpin *WARNING* 0xd55656b0 unpin not necessary
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+uhub0 detached
+uhub1 detached
+uhub2 detached
+uhub3 detached
+uhub4 detached
+uhub0 at usb1 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub1 at usb2 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub2 at usb3 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub3 at usb4 configuration 1 interface 0 "Intel UHCI root hub" rev 1.00/1.00 addr 1
+uhub4 at usb0 configuration 1 interface 0 "Intel EHCI root hub" rev 2.00/1.00 addr 1
+drm:pid68803:radeon_bo_unpin *WARNING* 0xd55656b0 unpin not necessary
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577
+WARNING !(rw_status(&mode_config->mutex) == 0x0001UL) && !drm_modeset_is_locked(&mode_config->connection_mutex) failed at /usr/src/sys/dev/pci/drm/drm_crtc.h:1577

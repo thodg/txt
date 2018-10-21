@@ -1,0 +1,5 @@
+
+Device lookup
+ 1. SET_VERSION
+ 2. GET_UNIQUE or try next node
+
