@@ -1,0 +1,27 @@
+thoxdg survival kit :
+
+X  IBM ThinkPad T60
+
+x  TASCAM
+
+X  Canon EOS 5D
+
+o  Nokia 3310
+
+o  MTT phone
+    mini-USB
+
+o  HTC phone
+    mini-USB
+    without camera
+    with Cyanogen
+
+o  Apple iPhone 3G
+o  Apple PowerBook G4 12"
+
+x  Sun UltraSparc IIi
+o   w/ SCSI DVD drive
+
+o  Classic Gretsch drumkit
+
+x  Fretless bass

@@ -6,3 +6,10 @@ left hand 1h L 1,9h 2h
                      ABUI
 95S6
 ABKR22
+
+
+
+t60$ date
+Mon Oct 22 01:35:29 CEST 2018
+t60$ echo "best dream ever"
+best dream ever

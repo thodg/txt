@@ -1,0 +1,23 @@
+I am the psychotherapist.  Please, describe your problems.  Each time
+you are finished talking, type RET twice.
+
+scheme <-> erlang status ?
+
+Why do you say scheme erlang status?
+
+mgw
+
+Can you elaborate on that?
+
+nope
+
+I would appreciate it if you would continue.
+
+thanks
+
+Go on, don't be afraid.
+
+bye
+
+My secretary will send you a bill.
+
