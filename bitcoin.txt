@@ -1,4 +1,8 @@
 
+Bitcoin is T60 thermal sensors visual diagnostics gone anarchists.
+
+
+
 export BDB_PREFIX=/home/dx/c/oracle/db4/
 
 ./configure BDB_LIBS="-L${BDB_PREFIX}/lib -ldb_cxx-4.8" BDB_CFLAGS="-I${BDB_PREFIX}/include" CC=cc CXX=c++ --prefix="$PWD/obsd386" --with-gui=no
