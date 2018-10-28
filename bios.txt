@@ -1,0 +1,35 @@
+
+Personal computer :
+
+Video bios must adjust font to match screen resolution up to 80 columns.
+
+Vertical resolution must allow at least 25 lines.
+
+Copyright holders and contact information must be provided.
+
+The bios displays memory initialization.
+
+The bios detects block device to boot from.
+
+The bios beeps to indicate successful POST.
+
+The bios retrieve and execute first sector from boot device.
+
+---
+
+Boot sector redudancy / logging.
+
+It has been considered the boot sector should be made redundant
+on one block device. Or previous versions could be tried if
+new version is badly written.
+
+---
+
+Partition table redundancy / logging.
+
+It has been considered the partition table should be made
+redundant, on one block device. Or previous version could
+be used if new version is not usable.
+
+---
+
