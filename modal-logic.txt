@@ -1,0 +1,26 @@
+# Modal logic
+
+## 1. Notation
+```
+ ¬A   "Not A"
+ 
+ □A    "It is necessary that A"
+
+ ◊A    "It is possible that A"
+
+ A → B "If A then B"
+```
+
+## 2. Contruction
+K is a weak logic (Saul Kripke)
+
+### 2.1 Necessitation rule
+A is a theorem of K → □A is a theorem of K
+
+### 2.2 Distribution axiom
+□(A → B) → (□A → □B)
+
+## 3. T
+T is K plus the following axiom :
+
+□A → A
