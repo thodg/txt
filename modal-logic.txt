@@ -4,9 +4,9 @@
 ```
  ¬A   "Not A"
  
- □A    "It is necessary that A"
+ □A   "It is necessary that A"
 
- ◊A    "It is possible that A"
+ ◊A   "It is possible that A"
 
  A → B "If A then B"
 ```
