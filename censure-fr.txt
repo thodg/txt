@@ -1,0 +1,14 @@
+> 320, rue Saint-Honoré 75001 Paris
+> 14, avenue de l'Opéra 75001 Paris
+> 142, rue de Rivoli 75001 Paris
+> 81, rue Réaumur 75002 Paris
+> 27, boulevard Saint-Martin 75003 Paris
+> 40, rue des Blancs-Manteaux 75004 Paris
+> 67, rue Saint-Jacques 75005 Paris
+> 101, rue de Sèvres 75006 Paris
+> 115, rue Saint-Dominique 75007 Paris
+> 38, rue de Berri 75008 Paris
+> 66, avenue des Champs-Elysées 75008 Paris
+> 49-51, rue de Ponthieu 75008 Paris
+> 128, rue La Boetie 75008 Paris
+> 38, rue des Mathurins 75008 Paris
